@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // //Array
+        var fruits = ['Apple', 'Banana', 'Orange', 'Grapes'];
+
+        // // for(var i = 0; i <fruits.length; i++){
+        // //     document.write(fruits[i]);
+        // // }
+
+        // for(var key in fruits){
+        //     // document.write(fruits[key])
+        //     document.write(key + " " + fruits[key] + "<br>")
+        // }
+
+        // //Array Methods
+        // fruits.push("Guava");
+
+        // for(var key in fruits){
+        //     document.write(key + " " + fruits[key] + "<br>")
+        // }
+
+        // fruits.pop();
+
+        // for(var key in fruits){
+        //     document.write(key + " " + fruits[key] + "<br>")
+        // }
+
+        // fruits.unshift("Mango")
+
+        // for(var key in fruits){
+        //     document.write(key + " " + fruits[key] + "<br>")
+        // }
+
+        // fruits.shift()
+
+        // for(var key in fruits){
+        //     document.write(key + " " + fruits[key] + "<br>")
+        // }
+
+        // fruits.splice(2, 0, "Watermellon")
+
+        // for(var key in fruits){
+        //     document.write(key + " " + fruits[key] + "<br>")
+        // }
+
+        // fruits.splice(2, 2, "Kiwi")
+
+        // for(var key in fruits){
+        //     document.write(key + " " + fruits[key] + "<br>")
+        // }
+
+        // fruits.splice(2, 2)
+
+        // for(var key in fruits){
+        //     document.write(key + " " + fruits[key] + "<br>")
+        // }
+
+        var fruits = [
+            'Apple', 
+            'Banana', 
+            'Orange', 
+            'Grapes'];
+
+        //Object
+        var students = {
+            name : "Ali",
+            age : 22,
+            city : "Karachi",
+            email : "ali@gmail.com",
+            cnic : true
+        }
+
+        // document.write(students.name)
+        // document.write(students["name"])
+        // document.write(students["age"])
+        // document.write(students["city"])
+        // document.write(students["email"])
+        // document.write(students["cnic"])
+
+        for(var key in students){
+            document.write(key + ": " + students[key] + "<br>")
+        }
+
+        students["gender"] = "Male";
+
+        for(var key in students){
+            document.write(key + ": " + students[key] + "<br>")
+        }
+
+        delete students["city"];
+
+        for(var key in students){
+            document.write(key + ": " + students[key] + "<br>")
+        }
+
+    </script>
+</body>
+</html>
