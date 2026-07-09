@@ -1,0 +1,27 @@
+.container{
+    display: grid;
+
+    /* grid-template-columns: 300px 300px 300px; */
+    grid-template-columns: 1fr 2fr 3fr;
+    /* grid-template-columns: repeat(3, 300px); */
+    /* grid-template-columns: 300px 650px 300px; */
+    /* grid-template-columns: 25% 50% 25%; */
+    /* grid-template-columns: 300px auto 300px; */
+    grid-template-rows: auto;
+    /* gap: 5px; */
+    row-gap: 5px;
+    column-gap: 20px;
+
+    /* justify-content: space-between; */
+    border: 3px double green;
+    height: 400px;
+}
+
+.item{
+    background-color: lightcoral;
+    border: 2px solid red;
+}
+
+img{
+    width: 100%;
+}

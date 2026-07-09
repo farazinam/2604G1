@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        //break
+        for(var i = 1; i <= 10; i++){
+            if(i == 7){
+                break;
+            }
+            document.write(i)
+        }
+
+        document.write("<hr>")
+
+        //continue
+        for(var i = 1; i <= 10; i++){
+            if(i == 7){
+                continue;
+            }
+            document.write(i)
+        }
+
+        document.write("<hr>")
+
+        // odd numbers
+        for(var i = 1; i <= 10; i++){
+            if(i % 2 == 0){
+                continue;
+            }
+            document.write(i)
+        }
+
+        document.write("<hr>")
+
+        // even numbers
+        for(var i = 1; i <= 10; i++){
+            if(i % 2 == 1){
+                continue;
+            }
+            document.write(i)
+        }
+
+        document.write("<hr>")
+
+        //Variable Naming Rule
+        var MyName = "A";
+        var myName = "B";
+        var my_name = "C";
+        // var my-name = "C";
+        // var my name = "D";
+        var name1 = "E";
+        // var 1name = "F";
+        var m1yname = "F";
+        var _myname = "G";
+        var $myname = "G";
+        var myname = "G";
+
+        var name = "Ali"
+        document.write(name)
+
+        name = "Hassan";
+        document.write(name)
+
+        // Function 
+        var age = "22";
+        document.write(typeof(age))
+        age = parseInt(age)
+        document.write(typeof(age))
+        // Built-In fn
+        // confirm("Are you sure you want to delete this file?")
+        // alert("This Function is Alert");
+
+        // var fn = parseInt(prompt("Enter First Number"));
+        // var ln = parseInt(prompt("Enter Second Number"));
+        var fn = +prompt("Enter First Number");
+        var ln = +prompt("Enter Second Number");
+
+        alert("Addition of Two Numbers is " + (fn + ln))
+
+
+
+
+        
+        
+
+
+    </script>
+</body>
+</html>

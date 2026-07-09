@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // OPerators
+        //Arithmetic Opr (+, -, *, /, %, **)
+        //Relational Opr (==, ===, !=, !==, >, >=, <, <=)
+        //Assignment Opr (+=, -=, *=, /=, %=, **=)
+
+        //Logical Opr (&&, ||, !)
+        //Inc/Dec Opr (++, --)
+        //Ternary Opr
+
+        document.write("<h2> Assignment Opr </h2>");
+
+        var a = 4; 
+        var b = 2;
+
+        console.log(a);
+        console.log(b);
+        
+        // console.log(a += b); // a+=b => a = a+b
+        
+        console.log(a);
+        console.log(b);
+        
+        console.log(a -= b); // a-=b => a = a-b
+        
+        console.log(a);
+        console.log(b);
+
+        document.write("<h2> Logical Opr </h2>");
+
+        var x = 4; 
+        var y = 2;
+
+        console.log(x > y);
+        console.log(x > y && y < x);
+        console.log(x > y && y > x);
+
+        console.log(x > y || y > x);
+        console.log(x > y || y > x || x == y);
+
+        console.log(!(x > y));
+        console.log(!(x < y));
+
+
+        document.write("<h2> Inc/Dec Opr </h2>");
+
+        var i = 3;
+        console.log(i);
+        
+        console.log(++i); //pre-increnment
+        console.log(i);
+        
+        console.log(i++); // post-increment
+        console.log(i); 
+
+        console.log(--i); //pre-increnment
+        console.log(i);
+        
+        console.log(i--); // post-increment
+        console.log(i); 
+
+
+        document.write("<h2> Ternary Opr </h2>");
+
+        var name = "Faraz";
+
+        // console.log("Welcome " + name);
+        
+        // Ternary Opr
+        var res = (name) ? "Welcome " + name : "Welcome Guest";
+        console.log(res);
+        
+        
+
+        document.write("<h2> Conditional Statement </h2>");
+        //if
+        //if else
+        //if else-if (ladder)
+        //nested if
+        //switch
+
+        var age = 17;
+        
+        //if
+        if(age >= 18){
+            console.log("You are Eligible");
+        }
+
+        //if
+        if(age >= 18){
+            console.log("You are Eligible");
+        }
+        else{
+            console.log("You are NOT Eligible");
+        }
+
+
+
+
+        
+
+
+    </script>
+</body>
+</html>
