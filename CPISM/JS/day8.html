@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        // String Object
+        // var name1 = "Aptech Learning";
+        // var name2 = "NORTH NAZIMABAD";
+        // console.log(name1.toUpperCase())
+        // console.log(name2.toLowerCase())
+        // console.log(name2.length);
+        // console.log(name2.includes("NAZIMABAD"));
+        // console.log(name2.startsWith("N"));
+        // console.log(name2.endsWith("BADA"));
+
+        //Palendrome Word Program
+        // var word = prompt("Enter a Word");
+        // var rev = word.split("");
+        // rev = rev.reverse();
+        // rev = rev.join("");
+
+        // if(word == rev){
+        //     alert("Palendrone Word");
+        // }
+        // else{
+        //     alert("NOT a Palendrone Word");
+        // }
+
+        //Math Object
+        // var num = 22.9;
+        // rounded = Math.round(num);
+        // console.log(rounded);
+
+        // ceiled = Math.ceil(num);
+        // console.log(ceiled);
+
+        // floored = Math.floor(num);
+        // console.log(floored);
+
+        // var ran = Math.random();
+        // console.log(ran);
+        
+
+        // var player1 = prompt("Enter Player 1 Name");
+        // var player2 = prompt("Enter Player 2 Name");
+
+        // var rand = Math.random(); // 0.34876874658463
+        // var rounde = Math.round(rand)  //either 0 or 1
+
+        // if(rounde == 0){
+        //     alert(player1 + " is WINNER " + rand);
+        // }
+        // else{
+        //     alert(player2 + " is WINNER " + rand);
+        // }
+
+        
+        //Date Object
+        // var d = new Date();
+        // console.log(d);
+        // console.log(d.toDateString());
+        // console.log(d.getDate());
+        // console.log(d.getDay());
+        // console.log(d.getFullYear());
+        // console.log(d.getHours());
+        // console.log(d.getMilliseconds());
+        // console.log(d.getMinutes());
+        // console.log(d.getMonth());
+        // console.log(d.getSeconds());
+        // console.log(d.getTime());
+
+        // var day = d.getDay();
+        // if(day == 0){
+        //     console.log("Sunday");
+        // }
+        // else if(day == 1){
+        //     console.log("Monday");
+        // }
+        // else if(day == 2){
+        //     console.log("Tuesday");
+        // }
+        // else if(day == 3){
+        //     console.log("Wednesday");
+        // }
+        // else if(day == 4){
+        //     console.log("Thursday");
+        // }
+        // else if(day == 5){
+        //     console.log("Friday");
+        // }
+        // else{
+        //     console.log("Saturday");
+        // }
+
+        //Age Calculator
+
+        var d = new Date();
+        var getYear = d.getFullYear();
+
+        var dob = new Date(prompt("Enter you DOB","jan/12/2000"));
+        dobYear = dob.getFullYear()
+
+        age = getYear - dobYear;
+        alert("You are " + age + " Years OLD");
+        
+
+        
+        
+
+
+    </script>
+</body>
+</html>
