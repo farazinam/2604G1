@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calculator</h1>
+
+    <script>
+        var num1 = +prompt("Enter Firs Number");
+        var num2 = +prompt("Enter Second Number");
+        var opr = prompt("Enter Operator");
+
+        if(opr == "+"){
+            alert(num1 + num2)
+        }
+        else if(opr == "-"){
+            alert(num1 - num2)
+        }
+        else if(opr == "*"){
+            alert(num1 * num2)
+        }
+        else if(opr == "/"){
+            alert(num1 / num2)
+        }
+        else{
+            alert("Please Provide Correct Operator or Operand")
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Mouse Events</h1>
+
+    <button onclick='alert("You Clicked!")'>Click Me</button>
+
+    <button onmouseover='alert("You Over a Mouse!")'>Mouse Over</button>
+    <button onmouseout='alert("You Out a Mouse!")'>Mouse Out</button>
+
+    <button onmouseenter='alert("You Entered a Mouse!")'>Mouse Enter</button>
+    <button onmouseleave='alert("You Left a Mouse!")'>Mouse Leave</button>
+
+    <button 
+    ondblclick="alert('You Double Clicked')"
+    onclick="alert('You Clicked')"
+    >Click / Double Click</button>
+
+    <button 
+    onmouseenter='console.log("You Entered a Mouse!")'
+    onmouseout="console.log('You Out a Mouse')"
+    >Mouse Enter/Out</button>
+
+
+
+    <h1>Keyboard Events</h1>
+
+    <button 
+    onkeypress="console.log('You Pressed a Key');
+    ">Key Press</button>
+
+    <button 
+    onkeydown="console.log('You Down a Key');
+    ">Key Down</button>
+
+    <button 
+    onkeyup="console.log('You Up a Key');
+    ">Key Up</button>
+    
+    
+    
+    
+    
+    <h1>Form Events</h1>
+
+    <form>
+        <input type="text" 
+        onfocus="console.log('You Focused')" 
+        onblur="console.log('You out a Mouse')"
+        onselect="console.log('You Selected a Text')">
+        <button>Submit</button>
+
+        <select onchange="alert('You Changed')">
+            <option value="">HTML</option>
+            <option value="">CSS</option>
+            <option value="">JS</option>
+        </select>
+    </form>
+
+    <form onsubmit="greet()">
+        <input type="text">
+        <button type="submit">Submit</button>
+    </form>
+
+    <button onclick='greet()'>Click Me</button>
+    
+    <script>
+        function greet (){
+            alert("Welcome to Aptech North Nazimabad");
+        }
+    </script>
+</body>
+</html>
