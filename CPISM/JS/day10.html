@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Document Object Model (DOM)</h1>
+    <!-- ----------Change Content of P Element-----------  -->
+
+    <p id="p1">Aptech Learning</p>
+
+    <hr>
+
+    <!-- ----------Change URL of Anchor Element Using JavaScript-----------  -->
+
+    <a class="facebookURL" href="https://www.facebook.com/" target="_blank">FaceBook</a>
+    <br>
+    <button onclick="getAnchor()">Click to Change URL</button>
+
+    <hr>
+
+    <!-- ---------- Bulb On/Off by changing Image -----------  -->
+
+    <img src="bulbOff.jpg" alt="" onmouseenter="onBulb()" onmouseleave="offBulb()">
+
+
+
+    <script>
+        // 
+        var para1 = document.getElementById("p1");
+        var para11 = document.getElementById("p1").innerHTML;
+        console.log(para1);
+        console.log(para11);
+        document.getElementById("p1").innerHTML = "Saturday";
+
+        //
+        function getAnchor(){
+            document.getElementsByClassName("facebookURL")[0].innerHTML = "Instagram";
+            document.getElementsByClassName("facebookURL")[0].href = "https://www.instagram.com/";
+        }
+
+        //
+        function onBulb(){
+            document.getElementsByTagName("img")[0].src = 'bulbOn.jpg';
+        }
+        function offBulb(){
+            document.getElementsByTagName("img")[0].src = 'bulbOff.jpg';
+        }
+        
+    </script>
+</body>
+</html>
