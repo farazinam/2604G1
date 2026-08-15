@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button onclick="changeTheme()">Click to change THeme</button>
+
+    <h1>Calculator</h1>
+
+    <input type="text"><br>
+    <button onclick="getNum(1)">1</button>
+    <button onclick="getNum(2)">2</button>
+    <button onclick="getNum(3)">3</button> <br>
+    <button onclick="getNum(4)">4</button>
+    <button onclick="getNum(5)">5</button>
+    <button onclick="getNum(6)">6</button> <br>
+    <button onclick="getNum(7)">7</button>
+    <button onclick="getNum(8)">8</button>
+    <button onclick="getNum(9)">9</button> <br>
+    <button onclick="getNum(0)">0</button> <br>
+    <button onclick="opr('+')">+</button>
+    <button onclick="opr('-')">-</button>
+    <button onclick="opr('*')">x</button>
+    <button onclick="opr('/')">/</button> <br>
+    <button onclick="calculate()">=</button> 
+    <button onclick="cls()">C</button>
+
+
+    <script>
+        function getNum(num){
+            var inp = document.getElementsByTagName("input")[0];
+            inp.value += num;
+        }
+
+        function opr(op){
+            var inp = document.getElementsByTagName("input")[0];
+            inp.value += op;
+        }
+
+        function calculate(op){
+            var inp = document.getElementsByTagName("input")[0];
+            inp.value = eval(inp.value);
+        }
+
+        function cls(op){
+            var inp = document.getElementsByTagName("input")[0];
+            inp.value = "";
+        }
+
+        function changeTheme(){
+            var body = document.getElementsByTagName("body")[0];
+            if(body.style.backgroundColor == "" || body.style.backgroundColor == "white"){
+                body.style.backgroundColor = "gray";
+            }
+            else{
+                body.style.backgroundColor = "white";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Apply CSS Using JS</h2>
+
+    <p>Welcome to JS DOM</p>
+    <button onclick="stylePara()">Click to Style Paragraph</button>
+
+    <h2> Working on Form With DOM</h2>
+
+    <form onsubmit="getInputVal()">
+        <label for="">Name</label>
+        <input type="text">
+        <button type="submit">Get Name</button>
+        <p style="color: green;"></p>
+    </form>
+
+    <script>
+        // -------
+        document.getElementsByTagName("h2")[0].style.color = "lightblue";
+        document.getElementsByTagName("h2")[0].style.backgroundColor = "gray";
+
+        function stylePara(){
+            document.getElementsByTagName("p")[0].style.color = "lightcoral";
+            document.getElementsByTagName("p")[0].style.backgroundColor = "lightblue";
+        }
+
+        // -------
+        function getInputVal(){
+            event.preventDefault();
+            inpVal = document.getElementsByTagName("input")[0].value;
+            console.log(inpVal);
+            // alert(inpVal);
+            // document.write(inpVal);
+
+            document.getElementsByTagName("p")[1].innerHTML = inpVal;
+            
+        }
+    </script>
+</body>
+
+</html>
