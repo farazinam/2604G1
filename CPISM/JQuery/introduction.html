@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script> -->
+     <script src="jquery-4.0.0.min.js"></script>
+</head>
+<body>
+    <h1>Jquery</h1>
+    <p id="p1" class="para"></p>
+    <p id="p2" class="para"></p>
+
+    <ul id="ul1">
+        <li>CPISM</li>
+        <li>DISM</li>
+        <li>HDSE</li>
+        <li>ADSE</li>
+    </ul>
+
+    <ul id="ul2">
+        <li>Software Enginnering</li>
+        <li>Digital Marketing</li>
+        <li>AI</li>
+        <li>Cyber Security</li>
+    </ul>
+
+    <ol>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+        <li>Four</li>
+    </ol>
+
+    <button>Click</button>
+    <button>Click</button>
+    <button>Click</button>
+
+    <script>
+        // Using JS 
+        // document.getElementsByTagName("p")[0].innerHTML = "Hello JS";
+
+        //Method 1
+        $(document).ready(function (){
+            //code
+        });
+
+        //Method 2
+        $(function (){
+            //code
+        });
+
+        $(document).ready(function (){
+            // $("p").eq(1).html("Welcome"); //by tag name
+            // $("#p1").html("Welcome"); //by id
+            // $(".para").eq(0).html("Welcome"); //by class
+
+            // var data = $("h1").html();
+            // console.log(data);
+
+            // $("*").css("background-color", "lightcoral");
+            // $("body").css("background-color", "gray");
+
+            $("#ul1 li").css("color", "blue");
+            $("#ul2 li").css("color", "green");
+            // $("li").eq(0).css("color", "blue");
+            
+            $("ol li:even").css("color", "red");
+            $("ol li:odd").css("color", "gray");
+
+            $("ol li:gt(0)").css("color", "pink");
+
+            //Events
+
+            //Mouse Events
+            $("button").eq(0).click(function (){
+                alert("You Clicked a Button!");
+            });
+            $("button").eq(0).dblclick(function (){
+                alert("You Double Clicked a Button!");
+            });
+            $("button").eq(0).contextmenu(function (){
+                alert("You Right Clicked a Button!");
+            });
+            $("button").eq(1).mouseenter(function (){
+                alert("You Entered a Mouse to a Button!");
+            });
+            $("button").eq(1).mouseleave(function (){
+                alert("You Leave a Mouse from a Button!");
+            });
+
+            //Keyboard Event
+            $("button").eq(2).keydown(function (){
+                console.log("You Key Down!");
+            });
+            $("button").eq(2).keyup(function (){
+                console.log("You Key Up!");
+            });
+        });
+
+    </script>
+</body>
+</html>
