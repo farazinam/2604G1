@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-4.0.0.min.js"></script>
+
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: lightgreen;
+            margin: 10px;
+        }
+
+        p{
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <button id="show1">HIDE</button>
+    <button id="show2">SHOW</button>
+    <button id="show3">TOGGLE</button>
+
+    <div></div>
+    <span></span>
+
+    <hr>
+
+    <button id="fade1">FADE OUT</button>
+    <button id="fade2">FADE IN</button>
+    <button id="fade3">FADE TOGGLE</button>
+    <button id="fade4">FADE TO</button>
+
+    <p style="background-color: red;"></p>
+    <p style="background-color: green;"></p>
+    <p style="background-color: blue;"></p>
+    <p style="background-color: black;"></p>
+
+    <script>
+        $(function(){
+            $('#show1').click(function(){
+                $('div').eq(0).hide(2000, function(){
+                    alert("Mubarak ho dabba ghayab hogya")
+                });
+            })
+            $('#show2').click(function(){
+                $('div').show(1000, function(){
+                    $('span').eq(0).html("Mubarak ho dabba wapas agya")
+                });
+            })
+            $('#show3').click(function(){
+                $('div').toggle();
+            })
+
+
+
+            $('#fade1').click(function (){
+                $("p").eq(3).fadeOut(500);
+                $("p").eq(2).fadeOut(1000);
+                $("p").eq(1).fadeOut(1500);
+                $("p").eq(0).fadeOut(2000);
+            })
+
+            $('#fade2').click(function (){
+                $("p").eq(0).fadeIn(500);
+                $("p").eq(1).fadeIn(1000);
+                $("p").eq(2).fadeIn(1500);
+                $("p").eq(3).fadeIn(2000);
+            })
+
+            $('#fade3').click(function (){
+                $("p").eq(0).fadeToggle(500);
+                $("p").eq(1).fadeToggle(1000);
+                $("p").eq(2).fadeToggle(1500);
+                $("p").eq(3).fadeToggle(2000);
+            })
+            $('#fade4').click(function (){
+                $("p").eq(0).fadeTo(500, 0.1);
+                $("p").eq(1).fadeTo(1000, 0.4);
+                $("p").eq(2).fadeTo(1500, 0.6);
+                $("p").eq(3).fadeTo(2000, 0.9);
+            })
+        })
+    </script>
+</body>
+</html>

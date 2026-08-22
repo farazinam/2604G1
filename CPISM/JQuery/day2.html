@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-4.0.0.min.js"></script>
+</head>
+<body>
+    <h1>Form Events</h1>
+    <form>
+        <label for="">Username</label>
+        <input type="text">
+
+        <p></p>
+
+        <div> Welcome to <b>Aptech Learning</b> </div>
+        <span></span>
+
+        <select>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+        </select>
+        <button type="submit">Submit</button>
+
+        <h3>Hello This is Mulple CSS ELement</h3>
+    </form>
+
+
+    <script>
+        $(function(){
+            $("input").focus(function (){
+                $(this).css("background-color", "gray");
+            })
+            $("input").blur(function (){
+                $(this).css("background-color", "lightgreen");
+            })
+            $("input").select(function (){
+                $(this).css("background-color", "lightcoral");
+            })
+            $("select").change(function (){
+                var selval = $(this).val();
+                console.log(selval);
+            })
+
+            $("form").submit(function (){
+                event.preventDefault();
+                var val1 = $("input").val(); //getter
+                $("p").html(val1);  //setter
+
+                var data = $("div").html();  //getter
+                // $("span").html(data);  //setter
+                $("span").text(data);  //setter
+                // alert("Form Submitted!")
+            })
+
+
+            $("h3").css({"color":"white", "background-color":"black", "font-family": "Arial"});
+
+        })
+    </script>
+</body>
+</html>
