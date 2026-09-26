@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-4.0.0.min.js"></script>
+
+    <style>
+        div{
+            background-color: lightskyblue;
+            height: 200px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Slide Up, Slide Down, and Slide Toggle</h1>
+
+    <div>Lorem ipsum dolor sit amet consectetur, 
+        adipisicing elit. Mollitia, suscipit.
+    </div>
+
+    <p></p>
+
+    <button>Slide Up</button>
+    <button>Slide Down</button>
+    <button>Slide Toggle</button>
+
+
+    <script>
+        $(function(){
+            $("button").eq(0).click(function (){
+                $("div").slideUp(2000, function(){
+                    $("p").html("Slide Up Completed!")
+                });
+            })
+            $("button").eq(1).click(function (){
+                $("div").slideDown(1000, function(){
+                    $("p").html("Slide Down Completed!")
+                });
+            })
+            $("button").eq(2).click(function (){
+                $("div").slideToggle();
+            })
+        })
+    </script>
+</body>
+</html>

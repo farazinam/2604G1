@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE aptech [
+<!ENTITY ACE "Aptech Computer Education">
+]>
+
+<aptech>
+    <stdrec xmlns:s='http://www.student.com'>
+    <s:student>
+        <s:name id="123">Ali</s:name>
+        <s:age>22</s:age>
+        <s:city>Karachi</s:city>
+        <s:details>Karachi &gt; Hyderabad</s:details>
+        <s:center> &ACE; </s:center>
+    </s:student>
+
+    <s:student>
+        <s:name id="456">Hassan</s:name>
+        <s:age>27</s:age>
+        <s:city>Karachi </s:city> 
+        <s:details> &apos;Hyderabad&apos; &lt; &quot;Karachi&quot; &amp; </s:details>
+        <s:center> &ACE; </s:center>      
+    </s:student>
+    </stdrec>
+
+     <f:faculty xmlns:f='http://www.faculty.com'>
+        <f:name id="123">Bilal</f:name>
+        <f:age>22</f:age>
+        <f:city>Karachi</f:city>
+        <f:details>Karachi &gt; Hyderabad</f:details>
+        <f:center> &ACE; </f:center>
+     </f:faculty>
+
+</aptech>
