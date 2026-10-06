@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE aptech [
+<!ELEMENT aptech (student+, faculty+)>
+<!ELEMENT student (name, age, city, details, center)>
+<!ELEMENT faculty (name, age, city, details, center)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT age (#PCDATA)>
+<!ELEMENT city (#PCDATA)>
+<!ELEMENT details (#PCDATA)>
+<!ELEMENT center (#PCDATA)>
+<!ATTLIST name id CDATA "789">
+<!ENTITY ACE "Aptech Computer Education">
+]>
+
+<aptech>
+
+    <student>
+        <name id="123">Ali</name>
+        <age>22</age>
+        <city>Karachi</city>
+        <details>Karachi &gt; Hyderabad</details>
+        <center> &ACE; </center>
+    </student>
+
+    <student>
+        <name>Hassan</name>
+        <age>27</age>
+        <city>Karachi </city> 
+        <details> &apos;Hyderabad&apos; &lt; &quot;Karachi&quot; &amp; </details>
+        <center> &ACE; </center>      
+    </student>
+
+    <student>
+        <name>Hassan</name>
+        <age>27</age>
+        <city>Karachi </city> 
+        <details> &apos;Hyderabad&apos; &lt; &quot;Karachi&quot; &amp; </details>
+        <center> &ACE; </center>      
+    </student>
+
+     <faculty>
+        <name>Bilal</name>
+        <age>22</age>
+        <city>Karachi</city>
+        <details>Karachi &gt; Hyderabad</details>
+        <center> &ACE; </center>
+     </faculty>
+
+     <faculty>
+        <name>Bilal</name>
+        <age>22</age>
+        <city>Karachi</city>
+        <details>Karachi &gt; Hyderabad</details>
+        <center> &ACE; </center>
+     </faculty>
+
+</aptech>

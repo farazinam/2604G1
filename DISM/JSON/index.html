@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Welcome to JSON</h1>
+
+    <script>
+        var student = {
+            name: "Ali",
+            age: 22, 
+            city: "Karachi"
+        }
+
+        student.city = "Lahore";
+        student.email = "ali@gmail.com"
+
+        console.log(student);
+
+        // document.write(student.name);
+        // document.write(student.age);
+        // document.write(student.city);
+
+        // document.write("<br>");
+
+        // document.write(student.name, student.age, student.city);
+
+        for(std in student){
+            // document.write(std);
+            // document.write(student[std]);
+            document.write(std + "=> " + student[std] + "<br>");
+        }
+        
+    </script>
+</body>
+</html>

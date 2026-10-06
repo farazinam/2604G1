@@ -1,0 +1,17 @@
+to, from, heading, body{
+    display: block;
+    margin: 5px;
+}
+
+to{
+    background-color: lightgreen;
+}
+from{
+    background-color: lightblue;
+}
+heading{
+    background-color: lightgrey;
+}
+body{
+    background-color: lightcoral;
+}
