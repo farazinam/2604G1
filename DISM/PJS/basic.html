@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="basic.js"></script>
+</head>
+<body>
+    <h1>Welcome To Advance JavaScript</h1>
+
+    <script>
+        alert("Hello PJS");
+
+        var a; //declaration
+        a = 20; //initialization
+
+        var a = 30; //declaration and initialization both
+
+        document.write(a);
+
+        let b = 10;
+        b = 20;
+        document.write(b);
+
+        const c = 5;
+        c = 7;
+        document.write(c);
+
+        // ----------------------- Hoisting --------------
+        //Allowed
+        x = 50;
+        document.write(x);
+        var x;
+
+        //Not Allowed
+        t = 9;
+        document.write(t);
+        let t;
+
+        //Not Allowed
+        f = 4;
+        document.write(f);
+        let f;
+
+
+        //------------------ Global Scope -----------------
+
+        var name1 = "Ali";
+        document.write(name1)    //Ali
+
+        {
+            var name1 = "Ahsan";
+            document.write(name1)    //Ahsan
+        }
+
+        document.write(name1)    //Ahsan
+
+
+        //------------------ Block Scope -----------------
+
+        let name2 = "Ali";
+        document.write(name2)    //Ali
+
+        {
+            let name2 = "Ahsan";
+            document.write(name2)    //Ahsan
+        }
+
+        // document.write(name2)    //Ali
+
+        const name3 = "Ali";
+        document.write(name3)    //Ali
+
+        {
+            const name3 = "Ahsan";
+            document.write(name3)    //Ahsan
+        }
+
+        document.write(name3)    //Ali
+
+
+
+    </script>
+</body>
+</html>
